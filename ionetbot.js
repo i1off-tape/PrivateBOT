@@ -74,6 +74,9 @@ const addThreadToMap = (discordThreadId, openAiThreadId) => {
 
 let nextAvailableTime = Date.now(); // Used to manage rate limiting for API requests
 
+// Specifies the terminal states of an OpenAI thread run, indicating completion or failure.
+const terminalStates = ['cancelled', 'failed', 'completed', 'expired']
+
 // Poll the status of an OpenAI thread until it reaches a terminal state
 const statusCheckLoop = async (openAiThreadId, runId) => {
   try {
