@@ -240,17 +240,6 @@ if (message.channel.type === ChannelType.GuildText && message.channel.name.start
       if (status === 'failed') {
         console.log(`Run failed for thread ID ${openAiThreadId}.`);
         await message.reply('An error occurred while processing your request. Please try again later.');
-        // Adjusts the rate limiting based on the error details if needed
-				const details = await openai.beta.threads.runs.retrieve(
-					openAiThreadId,
-					run.id
-				)
-				if (
-					details.last_error &&
-					details.last_error.code === 'rate_limit_exceeded'
-				) {
-					nextAvailableTime = Date.now() + 20 * 1000 // Wait an additional 20 seconds
-				}
       } else if (status === 'completed') {
         // Retrieve the messages from the OpenAI thread, including the generated response
         const messages = await openai.beta.threads.messages.list(openAiThreadId);
