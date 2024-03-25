@@ -31,6 +31,10 @@ In this repo we integrate Discord.js with the new OpenAI Assistants API. The bot
    ```
    npm install
    ```
+4. **Install MongoDB**:
+   ```
+   npm install mongodb
+   ```
 
 ## Configuration
 
