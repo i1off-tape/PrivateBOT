@@ -58,6 +58,10 @@ In this repo we integrate Discord.js with the new OpenAI Assistants API. The bot
    ```
    nodemon ionetbot.js
    ```
+2. Call discord bot chat in your Channel
+   ```
+   !CreatePrivateChannel
+   ```
    
 ## Usage
 
