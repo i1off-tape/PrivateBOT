@@ -25,7 +25,7 @@ In this repo we integrate Discord.js with the new OpenAI Assistants API. The bot
    ```
 2. **Navigate to the Repository Folder**:
    ```
-   cd openai-assistants-discord-bot
+   cd PrivateBOT
    ```
 3. **Install Dependencies**:
    ```
