@@ -61,8 +61,10 @@ In this repo we integrate Discord.js with the new OpenAI Assistants API. The bot
 2. Call discord bot chat in your Channel
    ```
    !CreatePrivateChannel
+    OR
+   !create (for ionetbot_test_dm.js)
    ```
-   
+3. Don't forget to change in .js ID channels to your own  
 ## Usage
 
 - **Interaction:** Simply type and send messages in your Discord server where the bot is added. For instance, when a user sends a message in a designated command channel (e.g., using !createPrivateChannel), the bot will automatically create a private channel for them, offering a personalized space for further interaction.
